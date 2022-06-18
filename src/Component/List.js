@@ -3,7 +3,7 @@ import React from "react";
 const List = ({ results }) => {
     const renderedList = results.map((item) => {
         return(
-            <div className="ui segment">
+            <div key={item.pageid} className="ui segment">
                 <h2>
                 <a 
                 href={"https:/en.wikipedia.org?curid="+item.pageid} 
