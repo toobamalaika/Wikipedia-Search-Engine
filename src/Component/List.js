@@ -1,13 +1,13 @@
 import React from "react";
 
+
 const List = ({ results }) => {
     const renderedList = results.map((item) => {
-        let link = "https:/en.wikipedia.org?curid=" +item.pageid;
         return(
             <div key={item.pageid} className="ui segment">
                 <h2>
                 <a 
-                href={link} 
+                href={"https:/en.wikipedia.org?curid="+item.pageid} 
                 className="header" 
                 target="_blank" 
                 rel="noreferrer"
